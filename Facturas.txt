@@ -1,0 +1,9 @@
+23635097/Factura/Pop/345/Post Malone/Circles/2022/21.0/828.0/2
+23635097/Total/1656.0
+23635097/Factura/Pop/98/Wonder/Shawn/2021/4.0/11.0/2
+23635097/Total/22.0
+23635097/Factura/Pop/345/Post Malone/Circles/2022/21.0/828.0/2
+23635097/Total/1656.0
+29321441/Factura/Pop/98/Wonder/Shawn/2021/4.0/11.0/2
+29321441/Factura/Pop/345/Post Malone/Circles/2022/21.0/828.0/2
+29321441/Total/1678.0

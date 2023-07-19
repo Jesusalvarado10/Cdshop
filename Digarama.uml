@@ -1,0 +1,121 @@
+@startuml
+class App{
+    factura dicc
+    __init()__
+    people list 
+    __ start() __
+    {method}actualizar_datos()
+    option string
+    +{method} menu_customer_1(2)
+    -{method}menu_customer_1(1)
+    {method}create_txt_inventary() {method}create_txt_person()
+
+    __menu_customer_1(n)__
+    option string
+    -{method}sign_in(1)
+    +{method}sign_in(2)
+    -{method}register(1)
+    +{method}register(2)
+    __search_dni(dni,name,n)__
+
+    __sign_in(n)__
+    name string
+    dni int
+    person
+    {method}search_dni(dni,name,1)
+    {method}validate_sign_in(person)
+    -{method}menu_customer_2()   
+    +{method}nemu_invoice(person) 
+    __validate_sign_in(person)__
+    __register(n)__
+    name string
+    last_name string
+    dni int
+    person
+    -{method}menu_customer_2()
+    +{method}nemu_invoice(person)
+    __menu_customer_2()__
+    option string
+    -{method}add_cd()
+    -{method}eliminate_cd()
+    -{method}estadisitca()
+    __add_cd()__
+    name_cd string
+    name_artis_cd string
+    year_cd int
+    gross_price float
+    price float
+    id int
+    products dicc
+    gender string
+    __random_id()__
+    nums list
+    __eliminate_cd()__
+    id int
+    __eliminate_cd()__
+    __show_inventary(k)__
+    __nemu_invoice(person)__
+    n string
+    {method}show_orden(int(n))
+    option string
+    count int
+    x string
+    
+
+
+    
+}
+class main{
+    {method}app.start()
+
+}
+class user{
+    {method}init()
+    name string
+    last_name string
+    dni int
+    {method}show_atributes()
+}
+class invoice{
+    rol string
+    __init()__
+    name string
+    last_name string
+    dni int
+    id int
+    shopping_car list
+    total float
+    compro bool
+    descuento bool
+    __
+    {method}show_atributes()
+    {method}product_free()
+    {method}show_shop_car
+    {method}eliminate_shopping_car
+    {method}double_item(id)
+    {method}empty()
+    {method}clear_list()
+}
+class customers{
+    rol string
+    __init()__
+    name string
+    last_name string
+    dni int
+    __
+    {method}show_atributes()
+
+}
+
+main <---- App
+user ---> invoice
+user ---> customers
+invoice ---> App
+customers ---> App 
+object person
+person : name string
+person : last_name string
+person : dni int
+
+
+@enduml
